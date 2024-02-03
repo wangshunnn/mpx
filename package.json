@@ -4,12 +4,16 @@
   "private": true,
   "scripts": {
     "lerna:publish": "lerna publish from-package --yes",
-    "lint": "eslint --ext .js packages/",
-    "fix": "eslint --fix --ext .js packages/",
+    "lint": "eslint --ext .js packages/ && npm run docs:lint",
+    "fix": "eslint --fix --ext .js packages/ && npm run docs:fix",
     "test": "jest",
     "release": "npm run lint && npm run test && npx lerna version",
-    "docs:dev": "vuepress dev docs-vuepress",
-    "docs:build": "vuepress build docs-vuepress"
+    "legacy:docs:dev": "vuepress dev docs-vuepress",
+    "legacy:docs:build": "vuepress build docs-vuepress",
+    "docs:lint": "npm -C docs-vitepress run lint",
+    "docs:fix": "npm -C docs-vitepress run fix",
+    "docs:dev": "npm -C docs-vitepress run dev",
+    "docs:build": "npm -C docs-vitepress run build"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",
