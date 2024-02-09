@@ -14,3 +14,19 @@
 .dark::view-transition-old(root) {
   z-index: 9999;
 }
+
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: -webkit-linear-gradient(120deg,
+      hsl(229 100% 86%),
+      hsl(162 100% 37%) 40%,
+      hsla(162 100% 42% / 80%) 45%,
+      hsl(162 100% 37%) 60%,
+      hsl(162 33% 45%));
+  --vp-home-hero-image-background-image: -webkit-linear-gradient(-45deg,
+      hsl(162 100% 37% / 60%) 40%,
+      hsla(162 100% 42% / 60%) 45%,
+      hsl(162 100% 37% / 60%) 60%,
+      hsl(162 33% 45% / 60%));
+  --vp-home-hero-image-filter: blur(40px);
+}
