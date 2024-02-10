@@ -22,7 +22,7 @@ jobs:
       - name: generate docs file
         if: env.GIT_DIFF
         run: |
-          npm i
+          npm i && npm i --prefix docs-vitepress
           npm run docs:build
 
       # 使用 https://github.com/appleboy/scp-action 进行部署，注意 strip_components 用于控制层级
