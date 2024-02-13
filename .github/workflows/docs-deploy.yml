@@ -36,7 +36,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-          cache: npm
+          # cache: npm # 没有上传lock文件，用不了cache
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Install dependencies
