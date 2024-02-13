@@ -1,7 +1,8 @@
-export const nav = [
+import type { DefaultTheme } from 'vitepress'
+export const nav: DefaultTheme.NavItem[] = [
   {
     text: '指南',
-    activeMatch: '/^guide/',
+    activeMatch: '/guide/',
     items: [
       { text: '基础', link: '/guide/basic/start' },
       { text: '进阶', link: '/guide/advance/store' },
@@ -12,20 +13,20 @@ export const nav = [
       { text: '迁移', link: '/guide/migrate/2.9' },
     ],
   },
-  { text: 'API', activeMatch: '/^api/', link: '/api/index' },
-  { text: '文章', activeMatch: '/^articles/', link: '/articles/index' },
+  { text: 'API', activeMatch: '/api/', link: '/api/index' },
+  { text: '文章', activeMatch: '/articles/', link: '/articles/index' },
   {
     text: '更新记录',
-    activeMatch: '/^releases/',
+    activeMatch: '/releases/',
     link: 'https:/github.com/didi/mpx/releases',
   },
 ]
 
-export const sidebar = {
+export const sidebar: DefaultTheme.Sidebar = {
   '/guide/': [
     {
       text: '基础',
-      collapsable: false,
+      collapsed: false,
       items: [
         { text: '快速开始', link: '/guide/basic/start' },
         { text: '介绍', link: '/guide/basic/intro' },
@@ -45,7 +46,7 @@ export const sidebar = {
     },
     {
       text: '进阶',
-      collapsable: false,
+      collapsed: false,
       items: [
         { text: '状态管理（store）', link: '/guide/advance/store' },
         { text: '状态管理（pinia）', link: '/guide/advance/pinia' },
@@ -67,7 +68,7 @@ export const sidebar = {
     },
     {
       text: '组合式 API',
-      collapsable: false,
+      collapsed: false,
       items: [
         { text: '组合式 API', link: '/guide/composition-api/composition-api' },
         { text: '响应式 API', link: '/guide/composition-api/reactive-api' },
@@ -75,7 +76,7 @@ export const sidebar = {
     },
     {
       text: '工具',
-      collapsable: false,
+      collapsed: false,
       items: [
         { text: '使用TypeScript开发小程序', link: '/guide/tool/ts' },
         { text: '单元测试', link: '/guide/tool/unit-test' },
@@ -84,7 +85,7 @@ export const sidebar = {
     },
     {
       text: '拓展',
-      collapsable: false,
+      collapsed: false,
       link: '/guide/extend/index',
       items: [
         { text: '网络请求', link: '/guide/extend/fetch' },
@@ -94,15 +95,15 @@ export const sidebar = {
     },
     {
       text: '理解',
-      collapsable: false,
+      collapsed: false,
       items: [
-        { text: 'Mpx 运行时增强原理', link: 'understand/runtime' },
-        { text: 'Mpx 编译构建原理', link: 'understand/compile' },
+        { text: 'Mpx 运行时增强原理', link: '/guide/understand/runtime' },
+        { text: 'Mpx 编译构建原理', link: '/guide/understand/compile' },
       ],
     },
     {
       text: '迁移',
-      collapsable: false,
+      collapsed: false,
       items: [
         { text: '从 2.8 升级至 2.9', link: '/guide/migrate/2.9' },
         { text: '从 2.7 升级至 2.8', link: '/guide/migrate/2.8' },
@@ -112,17 +113,28 @@ export const sidebar = {
     },
   ],
   '/api/': [
-    { text: '全局配置', link: 'app-config' },
-    { text: '全局 API', link: 'global-api' },
-    { text: '实例 API', link: 'instance-api' },
-    { text: 'Store API', link: 'store-api' },
-    { text: '模板指令', link: 'directives' },
-    { text: '编译构建', link: 'compile' },
-    { text: '内建组件', link: 'builtIn' },
-    { text: '响应式 API', link: 'reactivity-api' },
-    { text: '组合式 API', link: 'composition-api' },
-    { text: '选项式 API', link: 'optional-api' },
-    { text: '周边拓展', link: 'extend' },
+    { text: '全局配置', link: '/api/app-config' },
+    { text: '全局 API', link: '/api/global-api' },
+    { text: '实例 API', link: '/api/instance-api' },
+    { text: 'Store API', link: '/api/store-api' },
+    { text: '模板指令', link: '/api/directives' },
+    { text: '编译构建', link: '/api/compile' },
+    { text: '内建组件', link: '/api/builtIn' },
+    {
+      text: '响应式 API',
+      collapsed: false,
+      // link: '/api/reactivity-api',
+      items: [
+        { text: '响应式基础 API', link: '/api/reactivity-api/basic-reactivity' },
+        { text: 'Computed 与 Watch', link: '/api/reactivity-api/computed-watch-api' },
+        { text: 'Effect 作用域 API', link: '/api/reactivity-api/effect-scope' },
+        { text: 'Refs', link: '/api/reactivity-api/refs-api' },
+
+      ],
+    },
+    { text: '组合式 API', link: '/api/composition-api' },
+    { text: '选项式 API', link: '/api/optional-api' },
+    { text: '周边拓展', link: '/api/extend' },
   ],
   '/articles/': [
     { text: '滴滴开源小程序框架Mpx', link: '/articles/1.0' },
@@ -135,7 +147,10 @@ export const sidebar = {
       text: 'Mpx中基于 Typescript Template Literal Types 实现链式key的类型推导',
       link: '/articles/ts-derivation',
     },
-    { text: 'Mpx2.7 版本正式发布，大幅提升编译构建速度', link: '/articles/2.7-release' },
+    {
+      text: 'Mpx2.7 版本正式发布，大幅提升编译构建速度',
+      link: '/articles/2.7-release',
+    },
     {
       text: 'Mpx2.8 版本正式发布，使用组合式 API 开发小程序',
       link: '/articles/2.8-release',

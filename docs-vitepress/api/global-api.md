@@ -66,7 +66,7 @@ import mpx from '@mpxjs/core'
 const b = mpx.observable(object)
 ```
 - **注意：**
-  Mpx 2.8 版本后该 API 等同于 `reactive`，同时不再支持具名导出方式，建议直接使用 `reactive` 替代，请[点击](/api/reactivity-api/basic-reactivity.html#reactive)查看。
+  Mpx 2.8 版本后该 API 等同于 `reactive`，同时不再支持具名导出方式，建议直接使用 `reactive` 替代，请[点击](../api/reactivity-api/basic-reactivity.html#reactive)查看。
 
 ### set
 用于对一个响应式对象新增属性，会`触发订阅者更新操作`。[查看详情](/api/global-api.html#set)

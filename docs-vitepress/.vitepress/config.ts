@@ -9,6 +9,7 @@ const title = 'Mpx框架'
 const description = '深度性能优化的增强型小程序开发框架'
 
 export default defineConfig({
+  base: '/mpx',
   title: title,
   description: 'Mpx.js - 深度性能优化的增强型小程序开发框架',
   lang: 'zh-CN',

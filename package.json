@@ -13,7 +13,8 @@
     "docs:lint": "npm -C docs-vitepress run lint",
     "docs:fix": "npm -C docs-vitepress run fix",
     "docs:dev": "npm -C docs-vitepress run dev",
-    "docs:build": "npm -C docs-vitepress run build"
+    "docs:build": "npm -C docs-vitepress run build",
+    "docs:preview": "npm -C docs-vitepress run preview"
   },
   "devDependencies": {
     "@babel/core": "^7.8.7",

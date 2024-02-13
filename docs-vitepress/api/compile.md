@@ -876,7 +876,7 @@ messages: {
 
 为便于开发，Mpx 还支持配置语言包资源路径 messagesPath 来代替 messages 属性，Mpx 会从该路径下的 js 文件导出语言包对象。如果同时配置 messages 和 messagesPath 属性，Mpx 会优先设定 messages 为 i18n 语言包资源。
 
-详细介绍及使用见[工具-国际化i18n](../guide/tool/i18n.md)一节。
+详细介绍及使用见[工具-国际化i18n](../guide/advance/i18n.md)一节。
 
 ### auditResource
 
@@ -1526,7 +1526,7 @@ module.exports = defineConfig({
 ```
 ```css
   .custom-div {
-    @apply text-center my-0 font-medium;
+    @apply font-medium my-0 text-center;
   }
 ```
 将会转化为
@@ -1558,11 +1558,11 @@ module.exports = defineConfig({
 })
 ```
 ```html
-  <view class="lg:(p-2 m-2 text-red-600)"></view>
+  <view class="lg:(p-2 m-2 text-red-600) "></view>
 ```
 将会转化为
 ```html
-  <view class="lg:p-2 lg:m-2 lg:text-red-600"></view>
+  <view class="lg:m-2 lg:p-2 lg:text-red-600"></view>
 ```
 
 ### config

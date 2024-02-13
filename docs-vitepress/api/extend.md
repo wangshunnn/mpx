@@ -607,7 +607,7 @@ import mpx from "https://dpubstatic.udache.com/static/dpubimg/6MQOo-ocI4/2.2.43.
 :::
 
 ## size-report
-Mpx框架项目包体积可以进行分组、分包、页面、冗余Npm包等维度的分析和对比，详细[请见](/advance/size-report.html)
+Mpx框架项目包体积可以进行分组、分包、页面、冗余Npm包等维度的分析和对比，详细[请见](../guide/advance/size-report.html)
 
 ### 插件配置项
 

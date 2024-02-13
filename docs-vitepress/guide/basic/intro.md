@@ -100,7 +100,7 @@ Mpx具有以下功能特性：
 * [多平台增强](../advance/platform.md#多平台支持) (支持在微信、支付宝、百度、qq、头条小程序平台中进行增强开发)
 * [跨平台编译](../advance/platform.md#跨平台编译) (支持以微信为base，将一套代码转换输出到支付宝、百度、qq、头条小程序平台和[web平台](../advance/platform.md#跨平台输出web)中运行)
 * [TypeScript支持](../tool/ts.md) (基于ThisType实现了完善的类型推导)
-* [I18n国际化](../tool/i18n.md)
+* [I18n国际化](../advance/i18n.md)
 * 单元测试支持 (即将到来)
 * 快应用输出 (即将到来)
 

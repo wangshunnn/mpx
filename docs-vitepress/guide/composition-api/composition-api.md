@@ -843,5 +843,5 @@ const props = withDefaults(defineProps<Props>(), {
 
 * `store` 在组合式 API 中使用，详见[这里](../advance/store.md#use-store-in-composition-api)
 * `pinia` 在组合式 API 中使用，详见[这里](../advance/pinia.md)
-* `fetch` 在组合式 API 中使用，详见[这里](../extend/fetch.md/#composition-api-usage)
+* `fetch` 在组合式 API 中使用，详见[这里](../extend/fetch.md#composition-api-usage)
 * `i18n` 在组合式 API 中使用，详见[这里](../advance/i18n.md#composition-api-usage)
