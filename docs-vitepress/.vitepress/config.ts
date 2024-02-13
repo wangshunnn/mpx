@@ -9,6 +9,7 @@ const title = 'Mpx框架'
 const description = '深度性能优化的增强型小程序开发框架'
 
 export default defineConfig({
+  // TODO 临时 base
   base: '/mpx',
   title: title,
   description: 'Mpx.js - 深度性能优化的增强型小程序开发框架',
@@ -22,7 +23,7 @@ export default defineConfig({
   head: [
     [
       'link',
-      { rel: 'icon', href: '/favicon.ico', type: 'image/png', sizes: '16x16' },
+      { rel: 'icon', href: 'https://mpxjs.cn/favicon.ico', type: 'image/png', sizes: '16x16' },
     ],
     ['meta', { name: 'author', content: title }],
     ['meta', { property: 'og:type', content: 'website' }],
