@@ -7,7 +7,7 @@
 根据表达式的值的 [truthiness](https://developer.mozilla.org/zh-CN/docs/Glossary/Truthy) 来有条件地渲染元素。在切换时元素及它的数据绑定 / 组件被销毁并重建。 **注意：如果元素是 `<block/>`, 注意它并不是一个组件，它仅仅是一个包装元素，不会在页面中做任何渲染，只接受控制属性**。
 
 ::: danger
-当和 `wx:if` 一起使用时，`wx:for` 的优先级比 `wx:if` 更高。详见列[表渲染教程](../guide/basic/list-render.html)
+当和 `wx:if` 一起使用时，`wx:for` 的优先级比 `wx:if` 更高。详见[列表渲染教程](../guide/basic/list-render.html)
 :::
 
 **参考：** [条件渲染 - wx:if](../guide/basic/conditional-render.html)
@@ -103,7 +103,7 @@ Page({
 ```
 
 ::: danger
-当和 `wx:if` 一起使用时，`wx:for` 的优先级比 `wx:if` 更高。详见列[表渲染教程](../guide/basic/list-render.html)
+当和 `wx:if` 一起使用时，`wx:for` 的优先级比 `wx:if` 更高。详见[列表渲染教程](../guide/basic/list-render.html)
 :::
 
 `wx:for` 的详细用法可以通过以下链接查看教程详细说明。
